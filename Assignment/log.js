@@ -3,12 +3,12 @@ function logIn(event) {
     event.preventDefault(); 
   
     
-    var username = document.getElementById("login-username").value;
-    var password = document.getElementById("login-password").value;
+    const username = document.getElementById("login-username").value;
+    const password = document.getElementById("login-password").value;
   
    
-    var storedUsername = localStorage.getItem("username");
-    var storedPassword = localStorage.getItem("password");
+    const storedUsername = localStorage.getItem("username");
+    const storedPassword = localStorage.getItem("password");
   
     
     if (username === storedUsername && password === storedPassword) {
