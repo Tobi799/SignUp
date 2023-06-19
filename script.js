@@ -6,7 +6,7 @@ function signUp(event){
 
     if (username && password) {
 
-        localStorage.setItem('signup-username', username);\
+        localStorage.setItem('signup-username', username);
         localStorage.setItem('signup-password', password);
 
 
@@ -26,6 +26,7 @@ function login(event){
     const password = document.getElementById('login-password').value;
 
     const storedname = localStorage.getItem('username');
+    const storedpass = localStorage.getItem('password');
 
     if (username === storedname && password) {
         alert("Login successful");
