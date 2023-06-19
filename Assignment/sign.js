@@ -3,8 +3,8 @@ function signUp(event) {
     event.preventDefault(); 
   
    
-    var username = document.getElementById("signup-username").value;
-    var password = document.getElementById("signup-password").value;
+    const username = document.getElementById("signup-username").value;
+    const password = document.getElementById("signup-password").value;
   
     
     if (username && password) {
